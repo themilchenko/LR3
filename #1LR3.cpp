@@ -3,7 +3,7 @@
 #include <cmath>
 int main()
 {
-	std::srand(std::time(0));
+	std::srand(std::time(nullptr));
 	int a[10];
 	std::cout << "Array: ";
 	for (int i = 0; i < 10; i++)
