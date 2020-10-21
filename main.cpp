@@ -18,8 +18,8 @@ int main() {
     {
         if ((arr[i] % 2) == 0)
         {
-            double x = arr[i] /= 3;
-            std::cout << x << " ";
+            arr[i] /= 3;
+            std::cout << arr[i] << " ";
         }
        else
            std::cout << arr[i] << " ";
