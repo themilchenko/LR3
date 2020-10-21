@@ -33,7 +33,7 @@ int main()
 	std::cout << "Enter the your word to change word 'can' on your's: ";
 	std::cin >> word;
 	for (int i = 0; i < can.size(); i++)
-		if ((can.substr(i, 3) == "can") || (can.substr(i, 3) == "Can") || (can.substr(i, 3) == "can?"))
+		if ((can.substr(i, 3) == "can") || (can.substr(i, 3) == "Can"))
 		{
 			can.erase(i, 3);
 			can.insert(i, word);
