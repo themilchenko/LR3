@@ -7,23 +7,22 @@ int main() {
     int *arr = new int [n];
     std::cout << "Enter the number (n > 10) of values: ";
     std::cin >> n;
-    int a[n];
     std::cout<< std::endl << "Enter the numbers of array: ";
     for (i = 0; i < n; i++)
-        std::cin >> a[i];
+        std::cin >> arr[i];
     std::cout << std::endl << "Array: ";
     for (i = 0; i < n; i++)
-        std::cout << a[i] << " ";
+        std::cout << arr[i] << " ";
     std::cout << std::endl << "Array (/3): ";
     for (i = 0; i < n; i++)
     {
-        if ((a[i] % 2) == 0)
+        if ((arr[i] % 2) == 0)
         {
-            double x = a[i] /= 3;
+            double x = arr[i] /= 3;
             std::cout << x << " ";
         }
        else
-           std::cout << a[i] << " ";
+           std::cout << arr[i] << " ";
     }    
     std::cout << std::endl << "Enter 2 numbers of array to count average value: ";
     int k1, k2;
@@ -33,7 +32,7 @@ int main() {
     std::cin >> k2;
     int sum = 0;
     for(i = k1 - 1; i <= k2 - 1; i++)
-        sum += a[i];
+        sum += arr[i];
     double average = sum / abs(k1 - k2);
     std::cout << "Average value: " << average;
     return 0;
