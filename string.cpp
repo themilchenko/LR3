@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
 
 int main()
@@ -29,11 +29,12 @@ int main()
 	std::cout << std::endl << std::endl;
 
 	std::string word;
-	std::string can = "Can you can a can as a canner can can a can";
+	std::string can = "Can you can a can as a canner can can a can?";
 	std::cout << "Enter the your word to change word 'can' on your's: ";
 	std::cin >> word;
 	for (int i = 0; i < can.size(); i++)
-		if ((can.substr(i, 3) == "can") || (can.substr(i, 3) == "Can"))
+		if (((can.substr(i, 4) == "can ") || (can.substr(i, 4) == "Can ") || (can.substr(i, 4) == "can?"))
+			&& (can.substr(i, 4) != "cann"))
 		{
 			can.erase(i, 3);
 			can.insert(i, word);
