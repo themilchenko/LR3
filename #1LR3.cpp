@@ -12,7 +12,7 @@ int main()
 		std::cout << a[i] << " ";
 	}
 	std::cout << std::endl << "Resulting sum: ";
-	int sum = pow(a[0],2) + pow(a[1],2) + pow(a[5],2);
-	std::cout << pow(a[0],2) << " + " << pow(a[1],2) << " + " << pow(a[5],2) << " = " << sum;
+	int sum = pow(a[0],2) + pow(a[1],2) + pow(a[6],2);
+	std::cout << pow(a[0],2) << " + " << pow(a[1],2) << " + " << pow(a[6],2) << " = " << sum;
 	return 0;
 }
